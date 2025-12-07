@@ -30,6 +30,7 @@ body {
     background-color: #fafafa;
     color: #1F2937;
     padding: 32px 16px;
+    overflow-x: hidden;
 }
 
 .container {
@@ -79,6 +80,15 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 0;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-family: var(--font-main);
+    padding: var(--spacing-medium) var(--spacing-large);
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--primary-hover-color);
 }
 
 .button-01 {
@@ -109,49 +119,48 @@ button {
 }
 
 .button-03 {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    font-family: var(--font-main);
-    padding: var(--spacing-medium) var(--spacing-large);
-    transition: background-color 0.3s ease;
+    transform: scale(0.7);
+    transition: transform 0.6s ease-in-out;
 }
 
-  .button-03:hover {
-    background-color: var(--primary-hover-color);
+.button-03:hover {
+    transform: scale(1.3);
 }
 
 .button-04 {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    font-family: var(--font-main);
-    padding: var(--spacing-medium) var(--spacing-large);
-    transition: background-color 0.3s ease;
+    transition: translate 0.6s ease-in, translate 5s ease-out;
+    
 }
 
-  .button-04:hover {
-    background-color: var(--primary-hover-color);
+.button-04:hover {
+    translate: 6000px;
 }
 
 .button-05 {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    font-family: var(--font-main);
-    padding: var(--spacing-medium) var(--spacing-large);
-    transition: background-color 0.3s ease;
+    transition: transform 1.5s ease;
+    transform: scale(-1, -1);
 }
 
-  .button-05:hover {
-    background-color: var(--primary-hover-color);
+.button-05:hover {
+    transform: scale(1, 1);
+    transform: rotate(360deg);
 }
 
 .button-06 {
-    background-color: var(--primary-color);
+    background-color: midnightblue;
     color: var(--background-color);
-    font-family: var(--font-main);
-    padding: var(--spacing-medium) var(--spacing-large);
-    transition: background-color 0.3s ease;
+    transition: opacity 1.5s ease;
 }
 
-  .button-06:hover {
-    background-color: var(--primary-hover-color);
+.button-06:hover {
+    opacity: 0%;
+    box-shadow: none;
+}
+
+.button-06:hover span {
+    display: none;
+}
+
+.button-06:hover:before {
+    content: "Now you don't";
 }
