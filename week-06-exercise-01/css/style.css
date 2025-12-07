@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Times New Roman", serif;
+  font-family: "Calibri", serif;
   font-size: 16px;
   line-height: 2;
   color: #111111;
@@ -128,7 +128,11 @@ code {
 }
 
 .nav-horizontal li {
-  margin-bottom: 0;
+  margin-bottom: 3px;
+}
+
+.nav-horizontal li:hover {
+  box-shadow: 0 3px 0 darkseagreen;
 }
 
 .nav-horizontal a {
@@ -140,22 +144,50 @@ code {
 }
 
 .nav-horizontal a:hover {
-  color: #0066CC;
+  color: darkseagreen;
 }
 
 .nav-horizontal+main {
   margin-top: 80px;
 }
 
-.nav-custom {}
+.nav-custom {
+  position: fixed;
+  top: 0;
+  left: -85px;
+  z-index: 1000;
+  overflow-x: hidden;
+  width: 100px;
+  height: 100%;
+  background-color: darkseagreen;
+  padding-top: 20px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: end;
+  border-right: 10px;
+  border-color: darkseagreen;
+  transition: translate .4s ease;
+}
 
-.nav-custom ul {}
+.nav-custom:hover {
+  translate: 85px;
+}
 
-.nav-custom li {}
+.nav-custom ul {
+  list-style: none;
+}
 
-.nav-custom a {}
+.nav-custom a {
+  display: block;
+  color: whitesmoke;
+  padding: 8px 0;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
 
-.nav-custom a:hover {}
+.nav-custom a:hover {
+  color: pink;
+}
 
 @media (width >=480px) {}
 
