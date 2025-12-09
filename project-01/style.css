@@ -7,6 +7,8 @@
     --active-color: darkseagreen;
     --text-color-dark-background: #ffffff;
     --dark-background-color: #222222;
+    --text-light-shadow: whitesmoke;
+    --text-dark-shadow: #333333;
 }
 
 * {
@@ -51,23 +53,30 @@ main {
     color: var(--text-color-dark-background);
     max-width: 80%;
     min-height: 95vh;
+    text-shadow: 1px 1px 2px var(--text-dark-shadow);
 }
 
 .about img {
     width: 30%;
-    /*padding-top: 84px;*/
+    transition: transform 1s;
+}
+
+.about img:hover {
+    transform: rotate(360deg);
 }
 
 .skills {
     background-color: var(--secondary-color);
     color: var(--text-color-dark-background);
     padding: 16px;
+    text-shadow: 1px 1px 2px var(--text-dark-shadow);
 }
 
 .projects {
     background-color: var(--background-color);
     color: var(--text-color);
     padding: 16px;
+    text-shadow: 1px 1px 2px var(--primary-color);
 }
 
 .project-grid {
@@ -87,6 +96,14 @@ main {
     padding: 16px;
     flex-grow: 1; flex-shrink: 1; flex-basis: 300px;
     background-color: var(--primary-color);
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px var(--primary-color);
+    border-radius: 10px;
+}
+
+.project-card:hover {
+    translate: 0px -16px;
+    box-shadow: 8px 16px 10px 8px #444444;
 }
 
 .project-card p {
@@ -97,6 +114,8 @@ main {
     width: 100%;
     height: auto;
     display: block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--text-color);   
 }
 
 h1 {
@@ -110,6 +129,7 @@ h1 {
     color: var(--primary-color);
     letter-spacing: 1px;
     font-family: "Verdana", "Calibri", serif;
+    text-shadow: 2px 1px 2px var(--secondary-color);
 }
 
 h2 {
