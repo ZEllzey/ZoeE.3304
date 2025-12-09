@@ -6,7 +6,7 @@
     --text-color: #333333;
     --active-color: darkseagreen;
     --text-color-dark-background: #ffffff;
-    --dark-background-color: #333333;
+    --dark-background-color: #222222;
 }
 
 * {
@@ -20,12 +20,17 @@ body {
     font-size: 16px;
     line-height: 2;
     color: var(--text-color);
-    background-color: var(--background-color);
+    /*background-color: var(--background-color);*/
+    background-image: url(bluebonnets.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     display: block;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding: 32px 0;
+    padding-top: 50px;
 }
 
 main {
@@ -34,6 +39,16 @@ main {
     padding: 0 16px;
     align-content: center;
     justify-content: center;
+}
+
+footer {
+    background-color: var(--dark-background-color);
+    color: var(--text-color-dark-background);
+    padding: 1rem;
+}
+
+footer button {
+
 }
 
 h1 {
@@ -80,6 +95,7 @@ nav {
     z-index: 1000;
     display: flex;
     justify-content: space-between;
+    transition: translate .5s ease;
 }
   
 nav ul {
@@ -99,7 +115,9 @@ nav li {
 }
 
 nav .li-here {
-    background-color: #222222;
+    background-color: #333333;
+    color: var(--active-color);
+    box-shadow: 0 3px 0 #333333;
 }
   
 nav li:hover {
