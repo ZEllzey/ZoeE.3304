@@ -91,7 +91,7 @@ main>p {
 
 @media(width>=480px) {
     .collection-card {
-        flex-basis: 45%;
+        flex-basis: 80%;
     }
 }
 
