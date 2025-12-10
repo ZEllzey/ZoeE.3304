@@ -70,6 +70,30 @@ main {
     color: var(--text-color-dark-background);
     padding: 16px;
     text-shadow: 1px 1px 2px var(--text-dark-shadow);
+    width: 100%;
+}
+
+.skills p {
+    border-bottom: 4px solid #ffffff;
+    padding-bottom: 4px;
+}
+
+.skill-grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2.5%;
+    row-gap: 2.5%;
+    margin: 48px 0;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.skill-container {
+    max-width: 800px;
+    padding: 16px;
+    flex-grow: 1; flex-shrink: 1; flex-basis: 300px;
+    border-radius: 10px;
 }
 
 .projects {
@@ -88,7 +112,7 @@ main {
     margin: 48px 0;
     align-content: center;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
 }
 
 .project-card {
@@ -103,7 +127,7 @@ main {
 
 .project-card:hover {
     translate: 0px -16px;
-    box-shadow: 8px 16px 10px 8px #444444;
+    box-shadow: 8px 16px 10px 8px #999999;
 }
 
 .project-card p {
