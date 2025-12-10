@@ -135,8 +135,8 @@ main {
 }
 
 .project-card img {
-    max-width: 100%;
-    max-height: 400px;
+    width: 100%;
+    max-height: auto;
     display: block;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--text-color);   
@@ -149,6 +149,12 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color-dark-background);
+    text-shadow: 1px 1px 2px var(--text-color);
 }
 
 h1 {
@@ -295,7 +301,7 @@ footer a:hover{
         padding: 0px;
     }
     .project-card {
-        flex-basis: 80%;
+        flex-basis: 50%;
     }
 }
 
