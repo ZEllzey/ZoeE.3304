@@ -261,9 +261,31 @@ footer a:hover{
     background-color: #ffffff;
 }
 
+@media (width <=500px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    nav a{
+        padding: 0px;
+    }
+}
+
 @media (width <=625px) {
-    .about {
+    .floating {
         padding-top: 20px;
+    }
+
+    body {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    nav {
+        padding: 0px;
     }
 }
 
@@ -275,12 +297,12 @@ footer a:hover{
         padding: 0px;
     }
     .project-card {
-        flex-basis: 80%;
+        flex-basis: 50%;
     }
 }
 
 @media(width>=1024px) {
-    .collection-card {
+    .project-card {
         flex-basis: 30%;
     }
 }
